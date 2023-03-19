@@ -1,12 +1,13 @@
 import React from 'react'
 
-const InputField = () => {
+const InputField = (type, label, name, value, ...props) => {
   return (
     <div>
         <input 
-            type="email"
-            name="email"
-            value="email"
+            label={label}
+            type={type}
+            name={name}
+            value={value}
          />
     </div>
   )
